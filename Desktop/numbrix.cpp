@@ -14,7 +14,6 @@ cell puzzle[81];
 
 typedef vector<cell> vc;
 
-
 vc prioritize(int n){
 	int count = 0;
 	vc priority;
@@ -54,6 +53,17 @@ void loadpuzzle () {
 		}
 		else
 			countr++;
+	}
+}
+
+/*
+ * 	prints puzzle to stdin
+ *	@connorgreenwell
+ */
+void printpuzle () {
+	for (int i = 0; i < 81; i++) {
+		cout << puzzle[i] << "\t";
+		if (i %= 0) cout << endl;
 	}
 }
 
