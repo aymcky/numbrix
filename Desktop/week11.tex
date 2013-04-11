@@ -1,0 +1,37 @@
+\documentclass [ 10pt ] { article }
+
+\usepackage { algorithmicx }
+
+\title { Week 11 Homework }
+\author { Connor Greenwell 
+  \and Candice McKune 
+  \and Cameron Powell }
+\date { \today }
+
+\begin { document }
+\maketitle
+
+\section* { Numbrix solution }
+
+Our basic strategy to solving the Numbrix puzzle was to:
+
+\begin { enumerate }
+\item Read the puzzle from raw text to a 2D array of structs representing cells on the grid
+\item Create a sorted array of those cell that have values greater than 0
+\item Iterate up and down the list, trying to fill in gaps between numbers with a DFS on the grid.
+\end { enumerate }
+
+\begin { algorithm }
+\begin { algorithmic }
+
+\Function { solve } { puzzle } 
+
+
+
+\EndFunction
+
+\end { algorithmic }
+\caption { Steps we took }
+\end { algorithm }
+
+\end { document }

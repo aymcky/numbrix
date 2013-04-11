@@ -16,12 +16,15 @@ cell puzzle[81];
 typedef vector<cell> vc;
 typedef queue<cell> qc;
 
+<<<<<<< HEAD
 /*
 Prioritizes paths between cells by proximity of next path target
 
 Candice wuz here
 */
 
+=======
+>>>>>>> 351ef912db1f5b483e7e48edddf43bfeef400e4c
 vc prioritize(int n){
 	int count = 0;
 	vc priority;
@@ -65,6 +68,7 @@ void loadpuzzle () {
 	}
 }
 
+<<<<<<< HEAD
 /* 
 Path finding?
 
@@ -73,6 +77,16 @@ Path finding?
 bool pathform(cell start, cell target){
 	if(target.val - start.val > 1){
 		pathform(start, puzzle
+=======
+/*
+ * 	prints puzzle to stdin
+ *	@connorgreenwell
+ */
+void printpuzle () {
+	for (int i = 0; i < 81; i++) {
+		cout << puzzle[i] << "\t";
+		if (i %= 0) cout << endl;
+>>>>>>> 351ef912db1f5b483e7e48edddf43bfeef400e4c
 	}
 }
 
