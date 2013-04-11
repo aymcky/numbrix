@@ -6,9 +6,7 @@ using namespace std;
 int cellx[] = {-1,0,0,1}, celly[] = {0,1,-1,0};
 
 struct cell{
-	int val;
-	int x;
-	int y;
+	int val, x, y;
 	bool stable;
 };
 
@@ -38,8 +36,12 @@ vc prioritize(int n){
 	return priority;
 }
 
-int main(){
-	int n;
+/*
+ *  Loads puzzle from stdin
+ *  @connorgreenwell
+ */
+void loadpuzzle () {
+  int n;
 	int countl = 0, countr=0;
 	while(countl != 9){
 		cin >> n;
@@ -53,12 +55,14 @@ int main(){
 		else
 			countr++;
 	}
+}
 
+int main(){
+	
+  loadpuzzle();
 	
 	vc priority = prioritize(81);
 	cout << priority[1].val << "  (" << priority[1].x << "," << priority[1].y << ") stable:" << priority[1].stable << endl;
-
-	
 
 	return 0;
 }
